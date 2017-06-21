@@ -10,7 +10,7 @@ function httpGetAsync(theUrl, callback)
 }
 
 function getYearMonthPairList() {
-  var april2017 = new Date("2017-4-1 00:00:00");
+  var april2017 = new Date("2017/4/1 00:00:00");
   var month = april2017.getMonth()+1;
   var year = april2017.getFullYear();
   var today = new Date();
