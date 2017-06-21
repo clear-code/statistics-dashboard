@@ -1,0 +1,13 @@
+.blog-statistics, .contributions-statistics {
+    background: -webkit-linear-gradient(top, #fff 0%, #f0f0f0 100%);
+    background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#header {
+    background: #f0f0f0;
+    border-radius: 5px;
+    display: inline-block;
+    width: 100%;
+}

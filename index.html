@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="graph-style.css">
+    <link rel="stylesheet" type="text/css" href="selectors.css">
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="dashboard.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <h2><a href="#"><img src="images/icon-with-white-bg.svg" width="70" height="30" alt="logo"/>Statistics</a></h2>
+    </div>
+    <div>
+      <div id="contribution-month-select">
+        <div class="contributions-statistics">
+          <span>Upstream Contributions</span>
+          <select name="select" id="contribution-selector" onchange="displaySelectedMonthContributions(this);">
+            <option value="" disabled selected>---</option>
+          </select>
+        </div>
+        <div class="chart"/>
+      </div>
+      <div id="blog-month-select">
+        <div class="blog-statistics">
+          <span>Blog Articles</span>
+          <select name="blog-select" id="blog-article-selector"  onchange="displaySelectedMonthBlogs(this);">
+            <option value="" disabled selected>---</option>
+          </select>
+        </div>
+        <div class="blog-chart"/>
+      </div>
+  </body>
+</html>
