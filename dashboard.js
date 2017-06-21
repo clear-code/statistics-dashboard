@@ -55,7 +55,7 @@ function displaySelectedMonthContributions(obj)
   var text  = obj.options[idx].text;
 
   httpGetAsync(urlBase + value + ".csv", function(data) {
-    var lines = data.split("\n");
+    var lines = data.trim().split("\n");
     contributions[value] = lines.length;
     contributionCountList = [];
     for (var c in contributions) {
@@ -73,7 +73,7 @@ function displaySelectedMonthBlogs(obj)
   var text  = obj.options[idx].text;
 
   httpGetAsync(urlBase + value + ".csv", function(data) {
-    var lines = data.split("\n");
+    var lines = data.trim().split("\n");
     blogs[value] = lines.length;
     blogCountList = [];
     for (var b in blogs) {
